@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+   {% block head %}
+    <head>
+    {% load staticfiles %}
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" media="all">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+
+ 
+	</head>
+	 {% endblock %}
+	<body>
+		<h1 class="h1"> Starwars Movies </h1>
+		
+		
+		{% for i, j, k, l in mylist %}
+		<div class="list-group">
+		 <a href="characters/{{j}}" class="list-group-item list-group-item-action flex-column align-items-start">
+			<!--<a href="characters/{{v}}">{{i}}</ul>-->
+			<div class="d-flex w-100 justify-content-between">
+      			<h5 class="mb-1"><b><i>{{i}}</i></b></h5>
+      			
+      		</div>
+      		<p class="mb-1"><i>Director: {{k}}</i><i class="Spacing">Release Date: {{l}}</i></p>
+    			
+      		
+  		</a>
+    	</div>
+		
+		{% endfor %}
+	</body>
+</html>
+

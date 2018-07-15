@@ -1,0 +1,31 @@
+body{
+	background-image: url("image.jpg");
+	padding-bottom: 2%;
+}
+
+.h1{
+	
+	text-align: center;
+	color: white;
+	font-size: 500%;
+	padding-top: 0%;
+}
+
+.list-group {
+    padding-left: 10%;
+    padding-right: 10%;
+ 
+}
+
+.list-group-item {
+    color: white;
+    background-color: #005196;
+    border-color: white;
+    opacity: 0.8;
+    font-size: 90%;
+}
+
+.Spacing{
+	display: flex;
+
+}
